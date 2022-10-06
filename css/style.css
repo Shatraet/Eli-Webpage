@@ -1,0 +1,123 @@
+
+html {
+	font-size: 62.5%;
+}
+img {
+	width: 50%;
+	height: auto;
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+body {
+  background-color: rgb(9, 122, 9);
+  color: rgb(198, 255, 41);
+  font-size: 2.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+position: relative;
+}
+p {
+  text-align: left;
+  padding: 1em;
+  margin: 0;
+  height: auto;
+}
+footer {
+  text-align: center;
+  padding: 1em 0 .3em 0;
+  color: #D0D0D0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+nav a:link, nav a:visited {
+  color: #0099ff;
+  text-decoration: none;
+  justify-content: end;
+}
+nav a:hover, nav a:active  {
+  color: #ff0000;
+  text-decoration: underline;
+}
+nav a.active {
+  color: #F0F0F0;
+}
+header {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 0;
+}
+header h1 {
+  margin: 0;
+  padding: 0 auto;
+}
+.Title {
+  color: rgb(174, 204, 91);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 90px;
+  margin-top: 0;
+  text-align: center;
+  padding: 3px;
+  margin-top: .8em;
+}
+
+.description {
+  color: rgb(171, 255, 14);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  margin-top: .9em;
+  transition: all;
+  border: 10px solid rgb(13, 70, 255);
+  text-align: right;
+}
+
+.robutt{
+  border: 8px solid;
+  border-color: transparent;
+  width: 100%;
+}
+.robutt:hover{
+  border-color: #ff0000;
+}
+.tile1{
+  width: 65%;
+  height: auto;
+
+}
+.evil {
+font-size: 2em;
+display: grid;
+text-align: left;
+justify-content: center;
+}
+ul{
+  columns: 3;
+  gap: 50px;
+}
+.foot{
+  font-size: larger;
+  color:  rgb(171, 255, 14);
+  display: flex;
+  font-family: comic sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+.enemies{
+  display: flex;
+  width: 100%;
+}
+.evil+ul{
+  display: flex;
+  flex-direction: column;
+}
+audio{
+  top: 1rem;
+  position: sticky;
+}
