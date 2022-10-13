@@ -36,6 +36,7 @@ nav ul {
   padding: 1em;
   text-align: center;
 }
+
 nav a:link, nav a:visited {
   color: #0099ff;
   text-decoration: none;
@@ -62,12 +63,20 @@ header h1 {
   color: rgb(174, 204, 91);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 90px;
-  margin-top: 0;
   text-align: center;
   padding: 3px;
-  margin-top: .8em;
+  margin-top: 2em;
+  margin-bottom: .25em;
 }
-
+.Main {
+  color: rgb(174, 204, 91);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 90px;
+  text-align: center;
+  padding: 3px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
 .description {
   color: rgb(171, 255, 14);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -89,7 +98,6 @@ header h1 {
 .tile1{
   width: 65%;
   height: auto;
-
 }
 .evil {
 font-size: 2em;
@@ -97,9 +105,28 @@ display: grid;
 text-align: left;
 justify-content: center;
 }
-ul{
-  columns: 3;
-  gap: 50px;
+
+.evil ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0 2em;
+}
+.evil+ul{
+  display: flex;
+  flex-direction: column;
+}
+.vile ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0 2em;
+}
+.vile{
+  background-color: rgba(0, 0, 0, .25);
+
+}
+.vile+ul{
+  display: flex;
+  flex-direction: column;
 }
 .foot{
   font-size: larger;
@@ -108,16 +135,41 @@ ul{
   font-family: comic sans-serif;
   justify-content: center;
   text-align: center;
+  background-color: rgba(0, 0, 0, .25);
 }
 .enemies{
   display: flex;
-  width: 100%;
+  width: 75%;
 }
-.evil+ul{
-  display: flex;
-  flex-direction: column;
-}
+
+
 audio{
   top: 1rem;
   position: sticky;
+}
+@media screen and (max-width: 768px){
+  nav ul {
+    flex-direction: column;
+  }
+  .evil ul{
+    grid-template-columns: 1fr;
+    grid-gap: 0 0;
+  }
+  .vile ul{
+    grid-template-columns: 1fr;
+    grid-gap: 2em 0;
+  }
+  .robutt{
+    margin-top: 3em;
+    width: 9em;
+  }
+  header{
+    grid-template-columns: 1fr;
+    grid-gap: 2em 0;
+
+  }
+  .description{
+    word-wrap: break-word;
+   font-size: larger; 
+  }
 }
